@@ -1,0 +1,48 @@
+.left{
+
+}
+a{
+    color: #333333;
+}
+a:hover{
+    color: #666666;
+}
+.viewMore a{
+    color: #2AA6E0;
+}
+.viewMore a:hover{
+    color: #2AA6E0;
+}
+.border-bottom-1{
+    border-bottom: 1px #D2D9DF solid;
+}
+.border-bottom-2{
+    border-bottom: 2px #424B5A solid;
+}
+.listImg{
+    margin-right: 1rem;
+}
+.listImg img{
+    width: 224px;
+    height: 160px;
+}
+.pages{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    display: block;
+    border-radius: 100%;
+    color:#424B5A;
+    margin: 0px 5px;
+}
+.pagesActive{
+    background: #424B5A;
+    color:#FFFFFF;
+}
+.right{
+    margin-top: 100px;
+}
+.rightBox{
+    background: #f2f5f7;
+    border: 1px #cedae0 solid;
+}

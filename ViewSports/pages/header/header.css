@@ -1,0 +1,72 @@
+.headBorder{
+    border-bottom: 1px #C2D1D9 solid;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background: #ffffff;
+    width: 100%;
+}
+.head{
+    width: 1200px;
+    height: 80px;
+}
+.search{
+    width: 320px;
+    height: 40px;
+    background: #F5F9FC;
+    padding: 10px 16px;
+    border: 0px;
+    outline:none;
+    color:#8298AB;
+}
+.searchi {
+    position: absolute;
+    right: 12px;
+    font-size: 18px;
+}
+.search:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #8298AB;
+}
+
+.search:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #8298AB;
+}
+
+.search::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #8298AB;
+}
+.menu ul li{
+    height: 80px;
+    line-height: 80px;
+    cursor: pointer;
+    margin: 0 20px 0 20px;
+    color: #3B5266;
+}
+.menu ul li:hover{
+    color: #000000;
+    border-bottom: 2px #000000 solid;
+}
+.menu ul li:active{
+    color: #000000;
+    border-bottom: 2px #000000 solid;
+}
+.join{
+    width: 90px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 30px;
+    border: 1px #304659 solid;
+    font-size: 14px;
+    color:#304659;
+}
+.join:hover{
+    background: #304659;
+    color:#ffffff;
+}
+.login{
+    color: #3B5266;
+}

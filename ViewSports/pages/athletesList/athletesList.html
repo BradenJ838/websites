@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="athletesList.css">
+    <link rel="stylesheet" href="../../css/bootstrap-icon.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../footer/footer.css">
+    <title>Title</title>
+</head>
+<script>
+    let storage = window.localStorage;
+    function goPersonal(){
+        storage.visitor = 'visitor';
+    }
+    function openRecruiters(){
+        $('#menuIcon').toggleClass('menuClick');
+        $('.downmenu').toggleClass('d-flex');
+        $('#menuIcon li').toggleClass('text-white');
+        if($('.bi-chevron-up').length != 0){
+            $('.bi-chevron-up').addClass('bi-chevron-down').removeClass('bi-chevron-up');
+        }else {
+            $('.bi-chevron-down').addClass('bi-chevron-up').removeClass('bi-chevron-down');
+        }
+    }
+</script>
+<body>
+<div class="col d-flex justify-content-center headBorder">
+    <div class="head d-flex justify-content-between align-items-center ">
+        <a href="../home/index.html"><img src="../../img/header/logo.png" width="68px" height="auto"></a>
+        <div class="align-items-center position-relative d-flex">
+            <input class="search" placeholder="Search">
+            <i class="position-absolute bi bi-search searchi"></i>
+        </div>
+        <div class="menu d-flex align-items-center">
+            <ul class="d-flex">
+                <a href="../home/index.html"><li>Home</li></a>
+                <a href="../athletesList/athletesList.html"><li>Athletes</li></a>
+                <a href="../recruiterList/recruiterList.html"><li>Recruiters</li></a>
+                <a href="../articleList/articleList.html"><li>Articles</li></a>
+                <a href="../videoList/videoList.html"><li>Videos</li></a>
+                <a href="../selectPlan/selectPlan.html"><li>Plan & Pricing</li></a>
+            </ul>
+        </div>
+        <a href="../login/login.html"><div class="join cursor">Join now</div></a>
+        <a href="../signIn/signIn.html"><div class="cursor login">Sign in</div></a>
+    </div>
+</div>
+<div class="container-fluid p-0 mt-top">
+    <div class="container-fluid p-0 d-flex justify-content-center bg-white searchDiv">
+        <div class="widthFull d-flex justify-content-center">
+            <div class="col-10 d-flex align-items-center justify-content-around">
+                <div class="col-3 selectbox d-flex align-items-center px-3">
+                    <div class="selectFont">Sport Type:</div>
+                    <select class="form-select sportType" aria-label="Default select example">
+                        <option selected>ALL</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-3 selectbox d-flex align-items-center px-3">
+                    <div class="selectFont">Position:</div>
+                    <select class="form-select position" aria-label="Default select example">
+                        <option selected>ALL</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-3 selectbox d-flex align-items-center px-3">
+                    <div class="selectFont">Graduation Year:</div>
+                    <select class="form-select year" aria-label="Default select example">
+                        <option selected>ALL</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center grey">
+        <div class="widthFull d-flex justify-content-center my-5">
+            <div class="col-8 listBox p-5">
+                <div class="col-12 title fs-2 fw-bold pb-3">
+                    Athletes
+                </div>
+                <div class="col-12 d-flex border-bottom align-items-center my-3 pb-4">
+                    <div class="col-2 p-2"><img src="../../img/personal/photo2.png"></div>
+                    <div class="col-8 d-flex flex-column">
+                        <span><b class="fs-5">Esther Howard</b> <span class="nameHr mx-2"></span> <font
+                                class="listfont">Basketball • Shooting Guard</font></span>
+                        <span class="my-2"><span class="listTitle">Heigh:</span><span class="mx-3">6”</span><span
+                                class="listTitle mx-3">Weight:</span><span>175 lb</span></span>
+                        <span class="listfont">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</span>
+                    </div>
+                    <div class="col-2 d-flex flex-column">
+                        <span class="send">Send Message</span>
+                        <a class="view" href="../personal/personal.html" onclick="goPersonal()"> View Profile</a>
+                    </div>
+                </div>
+                <div class="col-12 d-flex border-bottom align-items-center my-3 pb-4">
+                    <div class="col-2 p-2"><img src="../../img/athletesList/portrait.png" ></div>
+                    <div class="col-8 d-flex flex-column">
+                        <span><b class="fs-5">John Cooper</b> <span class="nameHr mx-2"></span> <font
+                                class="listfont">Baseball • Center Fielder</font></span>
+                        <span class="my-2"><span class="listTitle">Heigh:</span><span class="mx-3">6”</span><span
+                                class="listTitle mx-3">Weight:</span><span>160 lb</span></span>
+                        <span class="listfont">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</span>
+                    </div>
+                    <div class="col-2 d-flex flex-column">
+                        <span class="send">Send Message</span>
+                        <a class="view" href="../personal/personal.html" onclick="goPersonal()"> View Profile</a>
+                    </div>
+                </div>
+                <div class="col-12 d-flex border-bottom align-items-center my-3 pb-4">
+                    <div class="col-2 p-2"><img src="../../img/athletesList/portrait.png" ></div>
+                    <div class="col-8 d-flex flex-column">
+                        <span><b class="fs-5">Brooklyn Simmons</b> <span class="nameHr mx-2"></span> <font
+                                class="listfont">Football • Offensive Guard</font></span>
+                        <span class="my-2"><span class="listTitle">Heigh:</span><span class="mx-3">6”</span><span
+                                class="listTitle mx-3">Weight:</span><span>183 lb</span></span>
+                        <span class="listfont">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</span>
+                    </div>
+                    <div class="col-2 d-flex flex-column">
+                        <span class="send">Send Message</span>
+                        <a class="view" href="../personal/personal.html" onclick="goPersonal()"> View Profile</a>
+                    </div>
+                </div>
+                <div class="col-12 d-flex border-bottom align-items-center my-3 pb-4">
+                    <div class="col-2 p-2"><img src="../../img/athletesList/portrait.png"></div>
+                    <div class="col-8 d-flex flex-column">
+                        <span><b class="fs-5">Guy Hawkins</b> <span class="nameHr mx-2"></span> <font
+                                class="listfont">Basketball • Center</font></span>
+                        <span class="my-2"><span class="listTitle">Heigh:</span><span class="mx-3">6”</span><span
+                                class="listTitle mx-3">Weight:</span><span>160 lb</span></span>
+                        <span class="listfont">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</span>
+                    </div>
+                    <div class="col-2 d-flex flex-column">
+                        <span class="send">Send Message</span>
+                        <a class="view" href="../personal/personal.html" onclick="goPersonal()"> View Profile</a>
+                    </div>
+                </div>
+                <div class="col-12 d-flex border-bottom align-items-center my-3 pb-4">
+                    <div class="col-2 p-2"><img src="../../img/athletesList/portrait.png"></div>
+                    <div class="col-8 d-flex flex-column">
+                        <span><b class="fs-5">Rober Jones</b> <span class="nameHr mx-2"></span> <font
+                                class="listfont">Sport • Position</font></span>
+                        <span class="my-2"><span class="listTitle">Heigh:</span><span class="mx-3">6”</span><span
+                                class="listTitle mx-3">Weight:</span><span>160 lb</span></span>
+                        <span class="listfont">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</span>
+                    </div>
+                    <div class="col-2 d-flex flex-column">
+                        <span class="send">Send Message</span>
+                        <a class="view" href="../personal/personal.html" onclick="goPersonal()"> View Profile</a>
+                    </div>
+                </div>
+                <div class="col-12 d-flex border-bottom align-items-center my-3 pb-4">
+                    <div class="col-2 p-2"><img src="../../img/athletesList/portrait.png"></div>
+                    <div class="col-8 d-flex flex-column">
+                        <span><b class="fs-5">Kristin Watson</b> <span class="nameHr mx-2"></span> <font
+                                class="listfont">Sport • Position</font></span>
+                        <span class="my-2"><span class="listTitle">Heigh:</span><span class="mx-3">6”</span><span
+                                class="listTitle mx-3">Weight:</span><span>160 lb</span></span>
+                        <span class="listfont">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</span>
+                    </div>
+                    <div class="col-2 d-flex flex-column">
+                        <span class="send">Send Message</span>
+                        <a class="view" href="../personal/personal.html" onclick="goPersonal()"> View Profile</a>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between my-4">
+                    <div><i class="bi bi-chevron-left"></i>Previous</div>
+                    <div class="col d-flex justify-content-center">
+                        <span class="pages pagesActive">1</span>
+                        <span class="pages">2</span>
+                    </div>
+                    <div>Next<i class="bi bi-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid d-flex justify-content-center flex-wrap footer">
+    <div class="widthFull d-flex justify-content-between my-5">
+        <div class="col-6 d-flex flex-column">
+            <img src="../../img/header/logo.png" width="68px">
+            <span class="logoAfter my-2">Making the interface intuitive <br>by building affordances</span>
+        </div>
+        <div class="col-6 d-flex flex-column">
+            <div class="content fontColor fw-bold">Amet minim mollit non deserunt ullamco est sit<br> aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit.
+            </div>
+        </div>
+    </div>
+    <div class="widthFull d-flex justify-content-between align-items-center mb-5">
+        <div class="col-6 d-flex flex-wrap">
+            <span class="fontColor col-12 my-2">Subscribe and get news</span>
+            <div class="align-items-center position-relative d-flex">
+                <input class="search" placeholder="Enter Email Address">
+                <i class="position-absolute bi bi-send-fill searchi"></i>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="col-12 d-flex fontColor">
+                <div class="d-flex col-6 flex-column">
+                    <span class="my-2 fw-bold">About us</span>
+                    <span>Meet our team. Learn more<br>about who we are & what<br>we do.</span>
+                </div>
+                <div class="d-flex col-6 flex-column">
+                    <span class="my-2 fw-bold">Career</span>
+                    <span>We’re looking for great <br>people to join our growing <br>team!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="widthFull d-flex mb-5 align-items-center">
+        <div class="col-6 fontColor">
+            <span>Privacy policy</span>
+            <span class="mx-3">Term of service</span>
+            <span>Contact us</span>
+        </div>
+        <div class="col-6 d-flex align-items-center">
+            <div class="col-6">
+                <i class="bi bi-facebook mx-2 fs-4"></i>
+                <i class="bi bi-twitter mx-2 fs-4"></i>
+                <i class="bi bi-linkedin mx-2 fs-4"></i>
+                <i class="bi bi-instagram mx-2 fs-4"></i>
+            </div>
+            <div class="col-6 fontColor">© 2022 ViewSports. All right reserved.</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

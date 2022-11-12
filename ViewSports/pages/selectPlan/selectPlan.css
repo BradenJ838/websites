@@ -1,0 +1,26 @@
+.box:hover{
+    background: #E1E9F0;
+}
+.selectPlanFont{
+    color: #304659;
+}
+.boxContent{
+    height: 400px;
+}
+.button{
+    width: 160px;
+    height: 40px;
+    background: #424B5A;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+}
+.mo{
+    color: #8298AB;
+    font-size: 14px;
+}
+.leftTitle{
+    font-size: 36px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/bootstrap-icon.css">
+    <link rel="stylesheet" href="generalInfo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <title>Title</title>
+</head>
+<script>
+    function showPayment(){
+        $('#payment').toggle();
+        $('.bandCard').toggleClass('bandCardActive');
+    }
+    $(document).ready(function () {
+        let storage = window.localStorage;
+        $('#money').html(storage.flag);
+    })
+</script>
+<body>
+<div class="container-fluid p-0 bg d-flex justify-content-center align-content-start position-relative">
+    <a href="../home/index.html"> <div class="position-absolute logo"><img src="../../img/generalInfo/logo.png" width="68px"></div></a>
+    <div class="widthDiv generalinfoHeight d-flex align-items-center flex-column bg-white my-5 px-5 py-3">
+        <div class="col-12 d-flex fontColor my-4" id="bar">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="col-3 d-flex position-relative justify-content-around align-items-center">
+                    <div class="sort sortActive text-center text-white">1</div>
+                    <div class="bar barActive"></div>
+                    <div class="position-absolute sort1 sortfont">General Information</div>
+                </div>
+                <div class="col-3 d-flex justify-content-around align-items-center position-relative">
+                    <div class="profile sort sortActive text-center text-white">2</div>
+                    <div class="profileBar bar barActive"></div>
+                    <div class="position-absolute sort2 sortfont">Professional Profile</div>
+                </div>
+                <div class="col-3 d-flex justify-content-around align-items-center position-relative">
+                    <div class="highlights sort sortActive text-center text-white">3</div>
+                    <div class="highlightsBar bar barActive"></div>
+                    <div class="position-absolute sort3 sortfont">Highlights</div>
+                </div>
+                <div class="d-flex justify-content-around align-items-center position-relative">
+                    <div class="payment sort sortActive text-center text-white">4</div>
+                    <div class="position-absolute sort4 sortfont">Payment Method</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <div class="col-10 d-flex flex-column">
+                <span class="p-2 fs-5 text-center fw-bold my-3">Last step! Set-up your payment method</span>
+                <div class="d-flex col-12 flex-column">
+                        <span class="d-flex flex-column">
+                            <span class="fontColor fs-5 fw-bold ">Summary</span>
+                            <span class="d-flex col-12 justify-content-between">
+                                <span class="fs-3 fw-bold">Premium Plan</span>
+                                <span class="fs-3 fw-bold">$<span id="money"></span> / Monthly</span>
+                            </span>
+                            <span class="fontColor fs-5 fw-bold mt-4">Payment Method</span>
+                            <div class="bandCard d-flex  flex-column col-12 p-3 my-2">
+                                <div class="d-flex  justify-content-between" onclick="showPayment()">
+                                    <span><input class="form-check-input mx-2" type="radio" name="flexRadioDefault">Debit / Credit Card</span>
+                                    <div>
+                                        <span><img src="../../img/generalInfo/Visa.png"></span>
+                                        <span><img src="../../img/generalInfo/Mastercard.png"></span>
+                                        <span><img src="../../img/generalInfo/maxex.png"></span>
+                                        <span><img src="../../img/generalInfo/Payment Method.png"></span>
+                                    </div>
+                                </div>
+                                <div id="payment" style="display: none">
+                                <div class="fontColor fs-7 my-2 text-end">All major Credit Cards Accepted</div>
+                                <div class="position-relative">
+                                    <input class="cardInput" type="text">
+                                    <div class="cardTitle">Card Holder Information</div>
+                                </div>
+                                <div class="d-flex justify-content-between my-4">
+                                    <div class="position-relative col-6">
+                                        <input class="cardInput cardcheck" type="text">
+                                        <div class="cardTitle">Card Number</div>
+                                        <div class="check"><img src="../../img/generalInfo/checkyes.png" width="100%"> </div>
+                                    </div>
+                                    <div class="position-relative col-5 ">
+                                        <input class="cardInput" type="text" placeholder="MM/YY">
+                                        <div class="cardTitle">Expiration Date</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="position-relative col-5">
+                                        <input class="cardInput" type="password">
+                                        <div class="cardTitle">Card Security Code</div>
+                                    </div>
+                                    <div class="mx-3"><a href="#"> What is this?</a></div>
+                                </div>
+                                </div>
+
+                            </div>
+                            <div class="bandCard1 d-flex col-12 p-3 align-items-center justify-content-between my-2">
+                                <span><input class="form-check-input mx-2" type="radio" name="flexRadioDefault">Checking or Saving</span>
+                                <div>
+                                    <span><img src="../../img/generalInfo/home.png"></span>
+                                </div>
+
+                            </div>
+
+                        </span>
+                    <span class="d-flex flex-column">
+                            <span class="fontColor fs-5 fw-bold">Billing Address</span>
+                        <span class="d-flex col-12">
+                            <span class="d-flex col-8 p-0">
+                                <span class="col-12 d-flex flex-column">
+                                    <input class="m-2 px-3 input" type="text">
+                                    <span class="px-2 fs-6 smTitle">Street Address</span>
+                                </span>
+                            </span>
+                            <span class="d-flex col-4">
+                                <span class="col-12 d-flex flex-column">
+                                    <input class="m-2 px-3 input" type="text">
+                                    <span class="px-2 fs-6 smTitle">Apartment, suite, unit, etc</span>
+                                </span>
+                            </span>
+                        </span>
+
+                   </span>
+
+                </div>
+                <span class="col-12 my-2">
+                        By clicking "Continue", I agree that I have read and accepted the Terms of Use, and I authorized ViewSports to charge my payment account for every monthly bill due.
+                </span>
+                <div class="col-12 d-flex justify-content-around">
+                    <a href="../personal/personal.html"><span
+                            class="d-flex justify-content-center skip text-center mx-2 my-4">Back</span></a>
+                    <a href="success.html"> <span
+                            class="d-flex justify-content-center continue text-center text-white mx-2 my-4">CONTINUE</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/bootstrap-icon.css">
+  <link rel="stylesheet" href="generalInfo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <script src="../../js/jquery-3.6.0.min.js"></script>
+  <title>Title</title>
+</head>
+<body>
+<div class="container-fluid p-0 bg d-flex justify-content-center align-content-start position-relative">
+    <a href="../home/index.html"> <div class="position-absolute logo"><img src="../../img/generalInfo/logo.png" width="68px"></div></a>
+  <div class="widthDiv generalinfoHeight d-flex align-items-center flex-column bg-white my-5 px-5 py-3">
+    <div class="col-12 d-flex fontColor my-4" id="bar">
+      <div class="col-12 d-flex justify-content-center">
+        <div class="col-3 d-flex position-relative justify-content-around align-items-center">
+          <div class="sort sortActive text-center text-white">1</div>
+          <div class="bar barActive"></div>
+          <div class="position-absolute sort1 sortfont">General Information</div>
+        </div>
+        <div class="col-3 d-flex justify-content-around align-items-center position-relative">
+          <div class="profile sort sortActive text-center text-white">2</div>
+          <div class="profileBar bar barActive"></div>
+          <div class="position-absolute sort2 sortfont">Professional Profile</div>
+        </div>
+        <div class="col-3 d-flex justify-content-around align-items-center position-relative">
+          <div class="highlights sort sortActive text-center text-white">3</div>
+          <div class="highlightsBar bar barActive"></div>
+          <div class="position-absolute sort3 sortfont">Highlights</div>
+        </div>
+        <div class="d-flex justify-content-around align-items-center position-relative">
+          <div class="payment sort text-center text-white">4</div>
+          <div class="position-absolute sort4">Payment Method</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-10 d-flex flex-column" >
+        <span class="p-2 fs-5 text-center fw-bold my-3">Add Some Highlights for yourself.</span>
+        <div class="d-flex col-12 flex-column">
+                        <span class="d-flex flex-column">
+                            <span class="fontColor fs-5 fw-bold ">About (Short Description)</span>
+                            <span class="d-flex col-12">
+                                <textarea rows="3" class="videArea col-12"></textarea>
+                            </span>
+                            <span class="fontColor fs-5 fw-bold mt-4">Highlight Videos</span>
+                            <span class="d-flex col-12 justify-content-center flex-column align-items-center videos my-3">
+                               <img src="../../img/generalInfo/upfile.png" width="20%">
+                                <span class="fontColor my-3">Drag and drop your video here or click the button to choose videos to upload</span>
+                                <input type="file" id="file" style="display: none">
+                                <button type="button" class="chooseVideo"/>Choose Video to upload</button>
+                              <span class="fontColor my-3">Max file size: # GB)</span>
+                            </span>
+                          <!--                            <span class="showVideo col-12 justify-content-center flex-column align-items-center p-3 videos my-3"-->
+                          <!--                                  style="display: none">-->
+                          <!--                                    <videoList class="videoList" src="../../img/home/videoList-test.mp4" controls="controls"-->
+                          <!--                                           width="100%"></videoList>-->
+                          <!--                            </span>-->
+                        </span>
+          <span class="d-flex flex-column">
+                            <span class="fontColor fs-5 fw-bold">Video Link</span>
+                            <span class="videoLink">You can also add your video by link the url. At the moment only Youtube videos are supported.</span>
+                            <span class="videoLink mt-3">Youtube Video</span>
+                            <div class="col-12 d-flex justify-content-between">
+                                <span class="col-9"><input class="input col-12 addVideoInput" type="text"
+                                                           placeholder="Example: www.youtube.com/watch?v=qdv1_video_w"></span>
+                                <span class="addVideo px-3 ">Add Video</span>
+                            </div>
+                        </span>
+        </div>
+        <div class="col-12 d-flex justify-content-around">
+                    <a href="Professional.html"> <span
+                            class="d-flex justify-content-center skip text-center mx-2 my-4" >Back</span></a>
+          <a class="d-flex justify-content-center continue text-center text-white mx-2 my-4" href="Payment.html"
+          >CONTINUE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

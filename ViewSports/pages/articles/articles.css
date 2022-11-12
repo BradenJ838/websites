@@ -1,0 +1,17 @@
+
+a{
+    color: #333333;
+}
+a:hover{
+    color: #666666;
+}
+.viewMore a{
+    color: #2AA6E0;
+}
+.viewMore a:hover{
+    color: #2AA6E0;
+}
+.rightBox{
+    background: #f2f5f7;
+    border: 1px #cedae0 solid;
+}

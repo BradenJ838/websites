@@ -1,0 +1,38 @@
+.footer{
+    background: #EFF4F8;
+}
+.search{
+    width: 320px;
+    height: 40px;
+    background: #E1E9F0;
+    padding: 10px 16px;
+    border: 0px;
+    outline:none;
+    color:#8298AB;
+}
+.searchi {
+    position: absolute;
+    right: 12px;
+    font-size: 18px;
+    color: #8298AB;
+}
+.search:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #8298AB;
+}
+
+.search:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #8298AB;
+}
+
+.search::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #8298AB;
+}
+.logoAfter{
+    color: #8298AB;
+}
+.content{
+    font-size: 24px;
+}

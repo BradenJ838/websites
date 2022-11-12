@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900;1200&display=swap" rel="stylesheet">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../header/header.css">
+    <title>Title</title>
+</head>
+<script>
+    function openRecruiters(){
+        $('#menuIcon').toggleClass('menuClick');
+        $('.downmenu').toggleClass('d-flex');
+        $('#menuIcon li').toggleClass('text-white');
+        if($('.bi-chevron-up').length != 0){
+            $('.bi-chevron-up').addClass('bi-chevron-down').removeClass('bi-chevron-up');
+        }else {
+            $('.bi-chevron-down').addClass('bi-chevron-up').removeClass('bi-chevron-down');
+        }
+    }
+    function toRecruiter(){
+        window.location.href="../recruiterSignUp/recruiterSignUp.html";
+    }
+</script>
+<body>
+<div class="col d-flex justify-content-center headBorder">
+    <div class="head d-flex justify-content-between align-items-center ">
+        <a href="../home/index.html"><img src="../../img/header/logo.png" width="68px" height="auto"></a>
+        <div class="align-items-center position-relative d-flex">
+            <input class="search" placeholder="Search">
+            <i class="position-absolute bi bi-search searchi"></i>
+        </div>
+        <div class="menu d-flex align-items-center">
+            <ul class="d-flex">
+                <a href="../home/index.html"><li>Home</li></a>
+                <a href="../athletesList/athletesList.html"><li>Athletes</li></a>
+                <a href="../recruiterList/recruiterList.html"><li>Recruiters</li></a>
+                <a href="../articleList/articleList.html"><li>Articles</li></a>
+                <a href="../videoList/videoList.html"><li>Videos</li></a>
+                <a href="../selectPlan/selectPlan.html"><li>Plan & Pricing</li></a>
+            </ul>
+        </div>
+        <a href="../login/login.html"><div class="join cursor">Join now</div></a>
+        <a href="../signIn/signIn.html"><div class="cursor login">Sign in</div></a>
+    </div>
+</div>
+<div class="container-fluid d-flex justify-content-center mt-top">
+    <div class="widthFull d-flex ">
+        <div class="col-7 loginbg d-flex justify-content-center align-items-center flex-column">
+            <span class="picFont text-white text-center">Your Journey to recruitment starts here</span>
+            <span class="text-white fs-4 my-4 text-center">Connect with recruiters from around the <br>country</span>
+        </div>
+        <div class="col-5 d-flex justify-content-center">
+            <div class="col-6 d-flex flex-column justify-content-center fontColor">
+                <span class="loginTitle">Sign up</span>
+                <span class="my-2 more">Already have account? <a href="../signIn/signIn.html"class="fw-bold">Sign in</a></span>
+                <span class="mt-4 mb-2">Your Role</span>
+                <div class="col-12 d-flex justify-content-between">
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" checked name="flexRadioDefault">
+                        <label class="form-check-label">
+                            Athletes
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio"  name="flexRadioDefault" onclick="toRecruiter()">
+                        <label class="form-check-label">
+                            Recruiters
+                        </label>
+                    </div>
+                </div>
+                <span class="my-2">Email</span>
+                <input type="text" class="input" >
+                <span class="my-2">Password</span>
+                <input type="password" class="input">
+                <div class="form-check my-5">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                        I agree to ViewSports’ Conditions of Use and Privacy Notice
+                    </label>
+                </div>
+                <a href="../selectPlan/selectPlan.html"><div class="bannerButton">Create account</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+<script> $("#footer").load("../footer/footer.html");</script>
+</body>
+</html>

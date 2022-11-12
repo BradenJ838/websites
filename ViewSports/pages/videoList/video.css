@@ -1,0 +1,109 @@
+body{
+    min-width: 1440px;
+}
+.theBest img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+.bestfont{
+    font-size: 160px;
+    color: #ffffff;
+}
+.moment{
+    color: #ffffff01;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    text-stroke-width: 1px;
+    text-stroke-color: #ffffff;
+}
+.bannerbg{
+    width: 100%;
+    padding-top: 50%;
+    height: 0px;
+}
+.bannerbg:before{
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.bannerBlack{
+    background: #00000080;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.playVideo{
+    width: 120px;
+    line-height: 40px;
+    border-radius: 8px;
+}
+.bibg{
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.bg0{
+    background: url('../../img/video/1.png') no-repeat;
+    background-size: 100% auto;
+}
+.bg1{
+    background: url('../../img/video/2.png') no-repeat;
+    background-size: 100% auto;
+}
+.bg2{
+    background: url('../../img/video/3.png') no-repeat;
+    background-size: 100% auto;
+}
+.bg3{
+    background: url('../../img/video/4.png') no-repeat;
+    background-size: 100% auto;
+}
+.imgDef img{
+    width: 70%;
+}
+.imgbig img{
+    width: 80% !important;
+}
+.showVide{
+    position: fixed;
+    z-index:1;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: #00000060;
+    display: none;
+}
+.showVideBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.videoPlus{
+    background: #FFFFFF;
+    padding: 20px 20px 20px 20px;
+    max-width: 1000px;
+    min-width: 800px;
+    border-radius: 10px;
+}
+.videoPlus video{
+    width: 100%;
+}
+.clearVideo{
+    right: 8px;
+    top: 0px;
+    font-size: 35px;
+    cursor: pointer;
+}

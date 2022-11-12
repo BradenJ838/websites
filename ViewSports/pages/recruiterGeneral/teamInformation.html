@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/bootstrap-icon.css">
+    <link rel="stylesheet" href="recruiterGeneral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <title>Title</title>
+    <script>
+        let storage = window.localStorage;
+        $(document).ready(function () {
+            if(storage.major == ''){
+                console.log(storage.major)
+                $('#majorBox').addClass('none');
+            }else {
+                $('#major').html(storage.major);
+            }
+            $('.addVideo').click(function (){
+                let inputVal = $('.addVideoInput').val();
+                storage.major = inputVal;
+                window.location.reload();
+            })
+        })
+
+    </script>
+</head>
+<body>
+<div class="container-fluid p-0 bg d-flex justify-content-center align-content-start position-relative">
+    <a href="../home/index.html"> <div class="position-absolute logo"><img src="../../img/generalInfo/logo.png" width="68px"></div></a>
+    <div class="widthDiv generalinfoHeight d-flex align-items-center flex-column bg-white my-5 px-5 py-3">
+        <div class="col-12 d-flex justify-content-center fontColor my-4" id="bar">
+            <div class="col-10 d-flex justify-content-center">
+                <div class="col-4 d-flex position-relative justify-content-around align-items-center">
+                    <div class="sort sortActive text-center text-white">1</div>
+                    <div class="bar barActive"></div>
+                    <div class="position-absolute sort1 sortfont">General Information</div>
+                </div>
+                <div class="col-4 d-flex justify-content-around align-items-center position-relative">
+                    <div class="profile sort sortActive text-center text-white">2</div>
+                    <div class="profileBar bar barActive"></div>
+                    <div class="position-absolute sort2 sortfont">Team Information</div>
+                </div>
+                <div class="d-flex justify-content-around align-items-center position-relative">
+                    <div class="payment sort text-center text-white">3</div>
+                    <div class="position-absolute sort4">Payment Method</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <!--General Info-->
+            <div class="col-10 d-flex flex-column" id="generalInfo">
+                <span class="p-2 fs-5 text-center fw-bold my-3">Thanks, Tell us a little bit about your team and <School class=""></School></span>
+                <div class="col-12 d-flex justify-content-between">
+                    <div class="col-12 d-flex flex-wrap">
+                        <div class="d-flex col-12 flex-column">
+                            <span class="d-flex flex-column">
+                                <span class="d-flex col-12 flex-wrap">
+                                    <span class="px-2 col-6 fontColor fs-5 fw-bold">How Many Coaches</span>
+                                    <span class="px-2 col-6 fontColor fs-5 fw-bold">Team Ranking</span>
+                                    <span class="col-6 d-flex flex-column p-2">
+                                        <select class="form-select" aria-label  ="Default select example">
+                                          <option selected>1</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                        <span class="fs-6 smTitle">Number of Coaches</span></span>
+                                    <span class="col-6 d-flex flex-column p-2">
+                                        <select class="form-select" aria-label="Default select example">
+                                          <option selected>1</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                        <span class="fs-6 smTitle">Team Ranking</span></span>
+                                </span>
+                            </span>
+                            <span class="d-flex flex-column mt-4">
+                                <span class="px-2 fontColor fs-5 fw-bold">School Majors</span>
+                                <span class="d-flex col-12">
+                                    <span class="col-6 d-flex flex-column p-2">
+                                        <select class="form-select" aria-label="Default select example">
+                                          <option selected>1</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                        <span class=" fs-6 smTitle">Number of Majors</span></span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 d-flex justify-content-between">
+                    <div class="d-flex col-12 flex-column">
+                        <span class="px-2 fontColor fs-5 fw-bold mt-3">Add all the majors your school offers</span>
+                        <div class="px-2 col-12 d-flex justify-content-between">
+                                <span class="col-9"><input class="input col-12 addVideoInput" value="" type="text"
+                                                           placeholder="Major"></span>
+                            <span class="addVideo px-5 ">Add</span>
+                        </div>
+                        <div class="col-12 mx-2 d-flex align-content-start flex-wrap major my-3">
+                            <span class="p-2 majorList m-2">Default <span class="majorClose mx-2"><i class="bi bi-x"></i></span></span>
+                            <span class="p-2 majorList m-2" id="majorBox"> <span id="major"></span><span class="majorClose mx-2"><i class="bi bi-x"></i></span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-around">
+                    <a href="recruiterGeneral.html"><span
+                            class="d-flex justify-content-center skip text-center mx-2 my-4">Back</span></a>
+                    <a class="continue text-center mx-2 text-white  my-4" href="payment.html"> CONTINUE</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
